@@ -1,5 +1,6 @@
 import './App.css';
 import {useState,useEffect} from 'react';
+import ListUsers from './components/ListUsers';
 const useContador = inicial=> {
   const [contador,setContador] = useState(inicial)
   const incrementar= () =>{
@@ -21,6 +22,7 @@ function App() {
       <p>{contador}</p>
       <button onClick={incrementar}>Incrementar</button>
       <button onClick={reiniciar}>reiniciar</button>
+      <ListUsers/>
     </div>
   );
 }
